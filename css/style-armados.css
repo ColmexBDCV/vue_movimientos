@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display&display=swap');
+
+:root {
+    --blue: #5e72e4;
+    --indigo: #5603ad;
+    --purple: #8965e0;
+    --pink: #f3a4b5;
+    --red: #f5365c;
+    --orange: #fb6340;
+    --yellow: #ffd600;
+    --green: #2dce89;
+    --teal: #11cdef;
+    --cyan: #2bffc6;
+    --white: #ffffff;
+    --gray: #8898aa;
+    --gray-dark: #32325d;
+    --light: #ced4da;
+    --lighter: #e9ecef;
+    --primary: #5e72e4;
+    --secondary: #f7fafc;
+    --success: #2dce89;
+    --info: #11cdef;
+    --warning: #fb6340;
+    --danger: #f5365c;
+    --light: #adb5bd;
+    --dark: #212529;
+    --default: #172b4d;
+    --white: #fff;
+    --neutral: #fff;
+    --darker: black;
+    --tw-text-opacity: 1;
+  
+    /*
+      Color System Start
+    */
+    --first-color: #7b213d/*#663259*/;
+    --first-color-light: #f4e1f099/*#f4e1f0*/;
+    --white-color: #f2f3f7;
+    /*
+      Color System End
+    */
+  
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    /*--font-family-sans-serif: Open Sans, sans-serif;*/
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    
+    --nav-width: 92px;
+  
+    /*Colores*/
+    --first-color: #7b213d;
+    --bg-color: #f7f8fa;
+    --white-color: #ffffff;
+    --gray-color: #868485;
+  
+    /*Fuente*/
+    --body-font: 'Poppins', sans-serif;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --small-font-size-footer: .575rem;
+    /*Z index*/
+    --z-fixed: 100;
+  
+    --primary-color: #7b213d;
+    --dark-primary-color: #6d2c4a;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background: url(../src/assets/Zap12.png) no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Playfair Display', serif !important;
+    background-color: rgba(60, 60, 60, 0.96);
+}
+
+.header .movimientos{
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    color: var(--bg-color);
+}
+
+.search-simple{
+    margin-bottom: 0px;
+    height: 30px;
+    border-radius: 10px;
+    /*margin-left: 10px;*/
+    border: 1px solid #adadad;
+    background-color: #adadad;
+    width: 400px;
+}
+
+.search-simple:focus{
+    border: 0px solid #adadad;
+    outline: none;
+}
+
+
+.logo img{
+    height: 45px;
+    vertical-align: sub;
+}
+
+.bg{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.bg-pages{
+    background-color: rgba(60, 60, 60, 0.96);
+    min-height: 100%;
+}
+
+.bg-facetas{
+    background-color: #000000 !important;
+    color: var(--white-color);
+}
+
+.bg-facetas .accordion-body{
+    padding: 0;
+}
+
+.bg-facetas .accordion-button:not(.collapsed){
+    background-color: transparent;
+}
+
+.bg-facetas .accordion-button:focus{
+    border-color: transparent;
+}
+
+.accordion-button{
+    color: var(--white-color) !important;
+}
+
+.about-page{
+    color: var(--bg-color);
+}
+.about-page p{
+    font-size: 20px;
+}
+
+.about-page .title{
+    font-size: 35px;
+}
+/*Override Bootstrap colors*/
+
+.btn-primary {
+    background-color: var(--first-color);
+    border-color: var(--first-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--first-color-light);
+    border-color: var(--first-color-light);
+}
+
+.form-check-input:checked {
+    background-color: var(--first-color);
+    border-color: var(--first-color);
+}
+
+a{
+    color: var(--gray-color);
+}
+
+a:hover{
+    color: var(--first-color);
+}
+
+.clean_search{
+    float: right;
+    cursor: pointer;
+    margin-top: 0px;
+}
+
+.clean_search:hover{
+    color: var(--first-color);
+}
+
+.nav-armados{
+    /*border-top: 0.5px solid var(--white-color);*/
+    width: 100%;
+    /*border-bottom: 0.5px solid var(--white-color);*/
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav-armados .navbar{
+    border-bottom: 0.5px solid;
+    width: 100%;
+}
+
+.nav-armados .nav-link{
+    padding-left: 0px !important;
+    padding-right: 20px !important;
+}
+
+/**********************************************************/
+
+.nav-search li a{
+    font-size: 25px;
+}
+
+.first-search{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 10px;
+    color: #8a8a8a;
+    width: 60%;
+    float: right;
+}
+
+.search-form .btn-primary{
+    color: #8a8a8a;
+}
+
+.title{
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+.search-form .form-control, .form-select{
+    width: 100%;
+    background-color: #adadad;
+}
+
+.search-form .btn-search{
+    color: #000000;
+    /*background-color: #ee3e3d;*/
+    background-color: #DCE4E3;
+    border-color: #DCE4E3;
+    font-size: 1.6rem;
+    padding: 5px 10px;
+    border-radius: 0px;
+}
+
+.contained{
+    height: 85%;
+    -webkit-box-align : center;
+    -webkit-align-items : center;
+    -moz-box-align : center;
+    -ms-flex-align : center;
+    align-items : center;
+
+    -webkit-box-pack : center;
+    -moz-box-pack : center;
+    -ms-flex-pack : center;
+    -webkit-justify-content : center;
+    justify-content : center;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+.menu-facetas .navbar-collapse {
+    width: auto;
+}

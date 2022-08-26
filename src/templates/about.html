@@ -1,0 +1,116 @@
+<template id="about">
+    <div class="bg-pages about-page">
+        <div class="container" style="height: 100%;">
+            <headers :keyword="search" :search_in="search_in" is_page="true"></headers>
+            <!--<div class="pt-3">
+                <div class="row header">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-md-auto">
+                                <span class="logo"><img src="src/assets/colmexfavicon.png"></span>
+                                        <router-link to="/"><span class="movimientos">Movimientos Armados en México</span>
+                                        </router-link>
+                            </div>
+                            <div class="col-md-auto" style="padding-top: 14px;">
+                                <input type="search" @keyup.enter="search_term" class="search-simple"
+                                            :placeholder="$t('search_term')" v-model="search" name="lname" />
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="col-12">
+                        <div class="nav-armados">
+                            <div class="col-12" style="min-height: 40px;">
+                                <nav class="navbar navbar-expand-lg navbar-dark bg-transparent float-end">
+                                    <div class="float-end ">
+                                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                            aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                            
+                                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-start">
+                                                <li class="nav-item">
+                                                    <router-link class="nav-link" to="/">Inicio</router-link>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <router-link class="nav-link" to="search">Ver Todo</router-link>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <router-link class="nav-link" to="about">Sobre el sitio</router-link>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <router-link class="nav-link" to="personas">Personas Mencionadas</router-link>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>                        
+                        </div>                    
+                    </div>                
+                </div>
+            </div>-->
+            <div class="contained">
+                <div class="row">
+                    <div class="col">
+                        <div class="title">
+                            Sobre el Proyecto
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col">
+                            <p class="text-left">
+                                Este sitio forma parte de las colecciones digitales de El Colegio de México y tiene como propósito integrar y difundir recursos de información sobre la violencia política en América Latina y el Caribe.
+
+
+                            </p>
+                            <p class="text-left">
+                                En esta primera etapa la colección incluye los números 1 a 58 de Madera: periódico clandestino, órgano de difusión de la “Liga Comunista 23 de septiembre” publicados de 1974 a 1981. Este periódico está ligado con el grupo guerrillero que nació en la década de 1970 y concebido como el medio que permitiría la comunicación entre el grupo guerrillero y la sociedad civil.
+                            </p>
+                            <p class="text-left">
+                                Estos documentos de carácter panfletario se distribuían entre los preparatorianos y universitarios del país y en las zonas fabriles. El Periódico Madera reseña e informa de luchas sindicales, estudiantiles y campesinas. Además, proporciona acciones de sabotaje y sobre todo mantiene una lectura crítica de los actores de izquierda que pactan durante los sexenios de Luis Echeverría Álvarez y José López Portillo hacia la reforma política. 
+                            </p>
+                            <p class="text-left">
+                                El acceso a esta colección del periódico ha sido posible a partir de un convenio celebrado entre los integrantes de la "Liga Comunista 23 de septiembre", representado por Jaime Laguna Berber, en su carácter de editor responsable del actual Periódico Madera y la Biblioteca Daniel Cosío Villegas de El Colegio de México A.C. 
+                            </p>
+                            <p class="text-left">
+                                El contenido de los documentos publicados es responsabilidad de cada autor o entidad y no representa el punto de vista de El Colegio de México. Se autoriza cualquier reproducción parcial o total de los contenidos o imágenes, incluyendo el almacenamiento digital (copia privada), siempre y cuando sea sin fines de lucro o para usos estrictamente académicos, citando invariablemente la fuente sin alteración de contenido y dando los créditos autorales.
+                            </p>
+                            <p class="text-left">
+                                En etapas posteriores se agregará a esta colección la producción académica de El Colegio de México relativa a este tema y otros recursos de información provenientes de entidades externas.
+                            </p>
+                            <p class="text-left">
+                                Imagen de Portada: José Villa – Villa Photography 
+                            </p>
+                            <p class="text-left">
+                                <strong><i>Creditos:</i></strong>
+                            </p>
+                            <p class="text-left">
+                                Dirección general y supervisión: <a
+                                    href="https://biblioteca.colmex.mx/es/pages/directorio">Micaela Chávez
+                                    Villa</a>&nbsp;- Directora de la Biblioteca Daniel Cosío Villegas (BDCV)
+                            </p>
+                            <p class="text-left">
+                                Dirección general y supervisión: <a
+                                    href="https://biblioteca.colmex.mx/es/pages/directorio">Alberto
+                                    Santiago Martínez</a>&nbsp;- Coordinador e Innovación Digital,  BDCV.
+                            </p>                            
+                            <p class="text-left">
+                                Desarrollo, revisión y adecuación de metadatos:
+                                <a href="https://biblioteca.colmex.mx/es/pages/directorio">Guadalupe Vega</a>, -Coordinadora de Organización de Información; <a href="https://biblioteca.colmex.mx/es/pages/directorio">Claudia Escobar Vallarta, Manuel Diosdado Barrón, Luz Elena Vergara Castro</a> - Catalogadores Clasificadores, BDCV. 
+                            </p>
+                            <p class="text-left">
+                                Desarrollo del sistema: <a href="https://biblioteca.colmex.mx/es/pages/directorio">Eime Javier Cisneros Brito y Rodrigo Cuéllar</a> -
+                                Especialistas en Sistemas de Información, BDCV.
+                            </p>
+                            <p class="text-left">
+                                Apoyo Infraestructura Tecnológica: <a href="https://biblioteca.colmex.mx/es/pages/directorio">Francisco Mejía</a>, Coordinador de Apoyo Tecnológico y <a href="https://biblioteca.colmex.mx/es/pages/directorio">Miguel Alejandro Contreras Flores</a> - Especialista en sistemas de información, BDCV. 
+                            </p>                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

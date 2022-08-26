@@ -1,0 +1,124 @@
+<template id="personas">
+    <div class="bg-pages about-page">
+        <div class="container" style="height: 100%;">
+            <headers :keyword="search" :search_in="search_in" is_page="true"></headers>
+            <!--<div class="pt-3">
+                <div class="row header">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-md-auto">
+                                <span class="logo"><img src="src/assets/colmexfavicon.png"></span>
+                                        <router-link to="/"><span class="movimientos">Movimientos Armados en México</span>
+                                        </router-link>
+                            </div>
+                            <div class="col-md-auto" style="padding-top: 14px;">
+                                <input type="search" @keyup.enter="search_term" class="search-simple"
+                                            :placeholder="$t('search_term')" v-model="search" name="lname" />
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="col-12">
+                        <div class="nav-armados">
+                            <div class="col-12" style="min-height: 40px;">
+                                <nav class="navbar navbar-expand-lg navbar-dark bg-transparent float-end">
+                                    <div class="float-end ">
+                                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                            aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                            
+                                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-start">
+                                                <li class="nav-item">
+                                                    <router-link class="nav-link" to="/">Inicio</router-link>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <router-link class="nav-link" to="search">Ver Todo</router-link>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <router-link class="nav-link" to="about">Sobre el sitio</router-link>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <router-link class="nav-link" to="personas">Personas Mencionadas</router-link>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>                        
+                        </div>                    
+                    </div>                
+                </div>
+            </div>-->
+            <div class="contained">
+                <div class="row">
+                    <div class="col">
+                        <div class="title">
+                            Grupos y Personas mencionados
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col">
+                            <p><strong>Grupos guerrilleros</strong><br><span>Asociación Cívica Guerrerense - Genaro
+                                    Vázquez Rojas - &nbsp;Asociación Cívica Guerrerense (ACG)</span><br><span>Asociación
+                                    Cívica Nacional Revolucionaria</span><br><span>Consejo de Autodefensa del
+                                    pueblo-Guerrero (relacionado con las anteriores)</span><br><span>Comando Armado de
+                                    Morelos "Rubén Jaramillo"</span><br><span>Ejército Indígena Revolucionario
+                                    Liberación Nacional&nbsp;</span><br><span>Ejército Popular
+                                    Revolucionario</span><br><span>Ejército Rojo del
+                                    Pueblo&nbsp;</span><br><span>Ejército Zapatista de Liberación
+                                    Nacional</span><br><span>Frente Estudiantil Revolucionario</span><br><span>Fuerzas
+                                    Armadas de Liberación&nbsp;</span><br><span>Fuerzas Armadas
+                                    Revolucionarias</span><br><span>Fuerzas de Liberación Nacional (antecedente el
+                                    EZLN)</span><br><span>Fuerzas Revolucionarias Armadas del
+                                    Pueblo</span><br><span>Grupo Comunista Internacionalista</span><br><span>Grupo
+                                    Genaro Vázquez Rojas</span><br><span>Grupo Popular Guerrillero</span><br><span>Grupo
+                                    Popular Guerrillero "Arturo Gámiz"</span><br><span>La Organización de los
+                                    Pobres&nbsp;</span><br><span>Liga Comunista 23 de septiembre</span><br><span>Liga
+                                    Comunista Espartaco (no es propiamente un grupo armado)</span><br><span>Movimiento
+                                    de Acción Revolucionaria</span><br><span>Movimiento Insurgente
+                                    Revolucionario</span><br><span>Núcleo Guerrillero Urbano de
+                                    Chihuahua&nbsp;</span><br><span>Organización Revolucionaria del
+                                    Proletariado</span><br><span>Partido de los Pobres - Brigada Campesina de
+                                    Ajusticiamiento</span><br><span>Partido Proletario Unido de
+                                    América&nbsp;</span><br><span>Partido Revolucionario Obrero Clandestino Unión del
+                                    Pueblo (P.R.O.C.U.P.)</span><br><span>Unión del Pueblo</span><br><span>Vanguardia
+                                    Armada del Pueblo (VAP)&nbsp;</span><br><span>&nbsp;</span><br><strong>Asociación
+                                    estudiantil</strong><br><span>Central Nacional de Estudiantes
+                                    Democráticos</span><br><span>Comité Comunista Estudiantil. Liga Comunista 23 de
+                                    septiembre.</span><br><span>Comité Coordinador de Comités de
+                                    Lucha&nbsp;</span><br><span>Federación de Estudiantes Universitarios de
+                                    Sinaloa&nbsp;</span><br><span>Frente Universitario Latinoamericano - Bloque
+                                    Estudiantil Revolucionario&nbsp;</span><br><span>&nbsp;</span><br><strong>Nombres
+                                    sueltos personas o grupos</strong><br><span>Víctor Rico Galán - Grupo Comunista
+                                    Internacionalista</span><br><span>Comité Coordinador del Diálogo
+                                    Sacerdotal</span><br><span>Comité Coprero del el Bejuco, Municipio de Coyuca de
+                                    Benítez, Guerrero.&nbsp;</span><br><span>Unión Libre de Asociaciones
+                                    Copreras&nbsp;</span><br><span>Frente de Liberación Nacional
+                                    Mexicano</span><br><span>Cuauhtémoc Cárdenas (Grupo Popular Guerrillero "Arturo
+                                    Gámiz")</span><br><span>OSEAS (Ignacio Arturo Salas Obregón) (Relacionado con la
+                                    LC23S)</span><br><span>Partido Revolucionario del Proletariado</span><br><span>Liga
+                                    Obrera Marxista</span><br><span>Movimiento 23 de septiembre (Relacionado con la
+                                    LC23S)</span><br><span>Movimiento de Unificación Marxista-Leninista Anti
+                                    revisionista mexicano&nbsp;</span><br><span>Movimiento Marxista-Leninista de
+                                    México</span><br><span>Movimiento Popular
+                                    Revolucionario&nbsp;</span><br><span>Organización Comunista
+                                    Cajeme&nbsp;</span><br><span>Partido Comunista Mexicano</span><br><span>Partido de
+                                    la Clase Obrera Mexicana&nbsp;</span><br><span>Lucio Cabañas
+                                    Barrientos</span><br><span>Unión Revolucionaria del Pueblo, Brigada Revolucionaria
+                                    "Emiliano Zapata"</span><br><span>Frente Unido Contra la Represión en
+                                    Guerrero&nbsp;</span><br><span>Frente de Defensa de los Derechos del Pueblo de
+                                    Guerrero&nbsp;</span><br><span>Vicente Lombardo
+                                    Toledano&nbsp;</span><br><span>Partido Obrero
+                                    Revolucionario&nbsp;</span><br><span>Partido Obrero Revolucionario
+                                    (Trotskista)</span><br><span>Partido Revolucionario de los
+                                    Trabajadores&nbsp;</span><br><span>Grupo de guerrilleros en prisión - Prisioneros de
+                                    la guerra del pueblo – Presos políticos</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
