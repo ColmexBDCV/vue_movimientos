@@ -61,7 +61,9 @@ export default {
                .then(response => {
                    var repository = filter_data(response.data.response);
                    this.$store.commit('principal/set_repo', repository);
-               });
+               }).catch(error => {
+                this.$store.dispatch('principal/notify_error',{description: "", metodo: "get_data()", error: error});
+            });
        }   
     },
     computed:{
@@ -82,17 +84,22 @@ export default {
         }
     },
     mounted(){
-        if(this.type){
-            this.$store.commit('principal/set_repo', '');
-            this.$store.getters['filters/filter'].forEach((data) => {
-                var type = data.type;
-                var val = data.value;
-                var label = data.key;
-                this.$store.dispatch('filters/delete_query_search', {type, val, label});
-            });
-            new Promise(resolve => setTimeout(this.query(this.type, this.val, this.label), 4000));
-        }else{
-            this.$store.dispatch('principal/get_data', this.$store.getters['principal/url']);
+        try{
+            if(this.type){
+                this.$store.commit('principal/set_repo', '');
+                this.$store.getters['filters/filter'].forEach((data) => {
+                    var type = data.type;
+                    var val = data.value;
+                    var label = data.key;
+                    this.$store.dispatch('filters/delete_query_search', {type, val, label});
+                });
+                new Promise(resolve => setTimeout(this.query(this.type, this.val, this.label), 4000));
+            }else{
+                this.$store.dispatch('principal/get_data', this.$store.getters['principal/url']);
+            }
+        }catch(error){
+            this.$store.dispatch('principal/notify_error',{description: "", metodo: "get_data()", error: error});
         }
+        
     }
 };

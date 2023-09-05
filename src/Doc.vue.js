@@ -45,11 +45,15 @@ export default{
             await axios.get(this.url_doc)
                 .then(response => {
                     this.doc = response.data
+            }).catch(error => {
+                this.$store.dispatch('principal/notify_error',{description: "", metodo: "get_data()", error: error});
             }),
             await axios.get(this.url_file)
                 .then(response => {
                     this.doc_prop = response.data
-            })
+            }).catch(error => {
+                this.$store.dispatch('principal/notify_error',{description: "", metodo: "get_data()", error: error});
+            });
         },
         filter_key(metadata, key){
             if(!article_filter(key))
